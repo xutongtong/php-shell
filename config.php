@@ -31,7 +31,7 @@ $queue_conf = [
 ];
 
 $shell_conf = [
-    'path' => '/alidata/www/stage/cron/index.php',
+    'path' => '**',
     'task' => 'queue',
     'action' => [
         'basic' => 'updateGoodsBasic',

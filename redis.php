@@ -10,4 +10,4 @@ $redis = new Redis();
 $redis->connect($redis_conf['host'], $redis_conf['port']);
 
 // 选择db—2
-$redis->select(2);
+$redis->select($redis_conf['index']);

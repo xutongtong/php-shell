@@ -21,3 +21,20 @@ $redis_conf = [
     'persistent' => true,
     'auth' => '',
 ];
+
+$queue_conf = [
+    'host' => '192.168.10.220',
+    'port' => 30001,
+    'index' => 3,
+    'persistent' => true,
+    'auth' => '',
+];
+
+$shell_conf = [
+    'path' => '/alidata/www/stage/cron/index.php',
+    'task' => 'queue',
+    'action' => [
+        'basic' => 'updateGoodsBasic',
+        'desc' => 'updateGoodsDesc'
+    ],
+];
